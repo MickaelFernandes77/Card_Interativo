@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12121f;
+    height: 100%;
+}
+
+.card-interactive {
+    width: 380px;
+    height: 360px;
+    margin-top: 12%;
+    border-radius: 30px;
+    background-color: #2a354679;
+}
+
+.star-container {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon-star.svg) center no-repeat;
+    background-color: #2a3546b7;
+    margin: 5% 0 0 10%;
+
+}
+
+.card-interactive>h4 {
+    padding: 8% 0 0 10%;
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.card-interactive>p {
+    font-size: 15px;
+    padding-left: 10%;
+    width: 80%;
+    color: #fff;
+}
+
+.num-container {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 3% 0 0 6%;
+}
+
+.number, .inactive{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50px;
+    background-color: #2a3546b7;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.number:hover {
+    background-color: #fff;
+    color: #fb7413;
+    transition: 0.5s;
+}
+
+.btn-sub {
+    color: #fff;
+    background-color: #fb7413;
+    width: 80%;
+    margin: 3% 0 0 10%;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.btn-sub:hover {
+    color: #fb7413;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.activeOrange {
+    background-color: #fb7413;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+}
