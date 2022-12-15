@@ -99,14 +99,16 @@ body {
     text-align: center;
     text-decoration: none;
 }
+
 /* second card elements */
 
-#imgThank{
+#imgThank {
     display: none;
     margin: 5% 0 0 27%;
 }
 
-#message{
+#message {
+    display: none;
     color: #fb7413;
     background-color: #2a3546b7;
     width: 50%;
@@ -116,5 +118,108 @@ body {
     margin-left: 25%;
     font-size: 15px;
     border-radius: 20px;
-    display: none;
 }
+
+#text2{
+    display: none;
+    font-size: 15px;
+    margin-left: 13%;
+    text-align: center;
+    width: 75%;
+    color: #fff;
+}
+
+/* media queries */
+
+@media(min-width: 320px) and (max-width:374px) {
+
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 40%;
+    }
+}
+
+@media(min-width:375px) and (max-width:425px) {
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 30%;
+    }
+}
+
+@media(min-width: 426px) and (max-width: 486px) {
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #imgThank {
+        display: none;
+        margin: 5% 0 0 30%;
+    }
+}
+
+@media(min-width: 487px) and (max-width: 550px) {
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #imgThank {
+        display: none;
+        margin: 6% 0 0 34%;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 575px) {
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #imgThank {
+        display: none;
+        margin: 6% 0 0 35%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* card container */
+    .card-interactive {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #imgThank {
+        display: none;
+        margin: 6% 0 0 35%;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* card container */
+    .card-interactive {
+        margin-top: 20%;
+    }
+
+    #imgThank {
+        display: none;
+        margin: 6% 0 0 28%;
+    }
+} 
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* card container */
+    .card-interactive {
+        margin-top: 15%;
+    }
+
+    #imgThank {
+        margin: 6% 0 0 30%;
+    }
+} 

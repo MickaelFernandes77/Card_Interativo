@@ -1,5 +1,6 @@
 let title = document.getElementById("title");
 let text = document.getElementById("text");
+let text2 = document.getElementById("text2");
 let message = document.getElementById("message");
 // container da imagem da estrela e imagem de agradecimento
 let starContainer = document.querySelector(".star-container");
@@ -105,15 +106,20 @@ function send(num) {
   title.style.marginRight = "40px";
   title.style.textAlign = "center";
 
-  // formatação do texto
-  text.innerHTML =
-    "We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!";
-  text.style.textAlign = "center";
-  text.style.paddingLeft = "30px";
-  text.style.width = "350px";
+  // formatação dos textos
+  text.style.display = "none";
+  text2.style.display = "block";
 
   // desaparecendo com a imagem da estrela e com os numeros de seleção e botao de envio
   starContainer.style.display = "none";
   numContainer.style.display = "none";
   btnSubmit.style.display = "none";
 }
+
+// removendo a função do scroll
+function noscroll(){
+  window.scrollTo(0,0);
+}
+
+window.addEventListener("scroll", noscroll);
+
