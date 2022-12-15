@@ -1,13 +1,21 @@
 let title = document.getElementById("title");
 let text = document.getElementById("text");
+let message = document.getElementById("message");
+// container da imagem da estrela e imagem de agradecimento
+let starContainer = document.querySelector(".star-container");
+let imgThank = document.getElementById("imgThank");
 // numero vazio, que vai receber o valor do número.
 let number = 0;
-// elementos dos numeros dos cards
+// container e elementos dos numeros dos cards.
+let numContainer = document.querySelector(".num-container");
 let n1 = document.getElementById("1");
 let n2 = document.getElementById("2");
 let n3 = document.getElementById("3");
 let n4 = document.getElementById("4");
 let n5 = document.getElementById("5");
+
+// botao submit
+let btnSubmit = document.querySelector(".btn-sub");
 
 function number1() {
   number = 1;
@@ -70,12 +78,12 @@ function number5() {
 }
 
 function send(num) {
+  // condicional para atribuir o valor do numero ao numero do parametro.
   if (number == 0) {
     alert("Please, select a number before sending it");
+    window.location.reload();
   } else if (number == 1) {
     num = 1;
-  } else if (number == 2) {
-    num = 2;
   } else if (number == 2) {
     num = 2;
   } else if (number == 3) {
@@ -85,5 +93,27 @@ function send(num) {
   } else if (number == 5) {
     num = 5;
   }
-  alert(num);
+
+  // formatação da imagem de agradecimento e da mensagem do numero que foi selecionado
+  imgThank.style.display = "block";
+  message.style.display = "block";
+  message.innerHTML =  `You select ${num} out of 5`
+
+  // formatação do titulo
+  title.innerHTML = "Thank You!";
+  title.style.marginTop = "-20px";
+  title.style.marginRight = "40px";
+  title.style.textAlign = "center";
+
+  // formatação do texto
+  text.innerHTML =
+    "We appreciate you taking the time to give a rating. if you ever need more support, don't hesitate to get in touch!";
+  text.style.textAlign = "center";
+  text.style.paddingLeft = "30px";
+  text.style.width = "350px";
+
+  // desaparecendo com a imagem da estrela e com os numeros de seleção e botao de envio
+  starContainer.style.display = "none";
+  numContainer.style.display = "none";
+  btnSubmit.style.display = "none";
 }
